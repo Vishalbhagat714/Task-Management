@@ -1,12 +1,14 @@
 import {
   HomeIcon,
+  InboxIcon,
   UserCircleIcon,
   TableCellsIcon,
   InformationCircleIcon,
   ServerStackIcon,
   RectangleStackIcon,
+  ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home,Inbox,Chat, Profile, Tables, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -19,9 +21,21 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "dashboard",
+        name: "Home",
         path: "/home",
         element: <Home />,
+      },
+      {
+        icon: <InboxIcon {...icon} />,
+        name: "inbox",
+        path: "/inbox",
+        element: <Inbox />,
+      },
+      {
+        icon: <ChatBubbleLeftRightIcon {...icon} />,
+        name: "Chat",
+        path: "/chat",
+        element: <Chat />,
       },
       {
         icon: <UserCircleIcon {...icon} />,

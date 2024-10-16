@@ -43,7 +43,7 @@ export function Dashboard() {
               ))
           )}
         </Routes>
-        <div className="text-blue-gray-600">
+        <div className="fixed bottom-0 right-0 text-blue-gray-600">
           <Footer />
         </div>
       </div>
