@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 
 export function SignUp() {
   return (
-    <section className="m-8 flex">
-            <div className="w-2/5 h-full hidden lg:block">
+    <section className="min-h-min lg:h-screen overflow-hidden flex gap-4">
+      <div className="w-2/5 m-2 hidden lg:block">
         <img
           src="/img/pattern.png"
           className="h-full w-full object-cover rounded-3xl"
         />
       </div>
-      <div className="w-full lg:w-3/5 flex flex-col items-center justify-center">
+      <div className="w-full  lg:w-3/5 flex flex-col items-center justify-center bg-cover bg-center bg-[url('https://demos.creative-tim.com/notus-react/static/media/register_bg_2.4f2cb0ac.png')]">
         <div className="text-center">
           <Typography variant="h2" className="font-bold mb-4">Join Us Today</Typography>
           <Typography variant="paragraph" color="blue-gray" className="text-lg font-normal">Enter your email and password to register.</Typography>

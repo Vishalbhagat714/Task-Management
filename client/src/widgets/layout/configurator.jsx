@@ -47,12 +47,14 @@ export function Configurator() {
   const [stars, setStars] = React.useState(0);
 
   const sidenavColors = {
-    white: "from-gray-100 to-gray-100 border-gray-200",
+    white: "from-gray-200 to-gray-200 border-gray-300",
     dark: "from-black to-black border-gray-200",
     green: "from-green-400 to-green-600",
     orange: "from-orange-400 to-orange-600",
     red: "from-red-400 to-red-600",
     pink: "from-pink-400 to-pink-600",
+    blue: "from-blue-400 to-blue-600",
+    
   };
 
   React.useEffect(() => {
@@ -163,14 +165,7 @@ export function Configurator() {
                 View Documentation
               </Button>
             </a>
-            <a
-              href="https://www.material-tailwind.com/blocks/react?rel=mtdr"
-              target="_black"
-            >
-              <Button variant="outlined" color="blue-gray" fullWidth>
-                Material Tailwind PRO
-              </Button>
-            </a>
+           
           </div>
           <a
             className="mx-auto flex items-center justify-center gap-2"

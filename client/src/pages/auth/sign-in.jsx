@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 
 export function SignIn() {
   return (
-    <section className="m-8 flex gap-4">
-      <div className="w-full lg:w-3/5 mt-24">
+    <section className="min-h-min lg:h-screen overflow-hidden flex gap-4">
+      <div className="w-full lg:w-3/5 mt-24 bg-cover bg-center bg-[url('https://demos.creative-tim.com/notus-react/static/media/register_bg_2.4f2cb0ac.png')]">
+        
         <div className="text-center">
           <Typography variant="h2" className="font-bold mb-4">Sign In</Typography>
           <Typography variant="paragraph" color="blue-gray" className="text-lg font-normal">Enter your email and password to Sign In.</Typography>
@@ -23,7 +24,7 @@ export function SignIn() {
             </Typography>
             <Input
               size="lg"
-              placeholder="name@mail.com"
+              placeholder="example@gmail.com"
               className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
               labelProps={{
                 className: "before:content-none after:content-none",
@@ -110,9 +111,8 @@ export function SignIn() {
             <Link to="/auth/sign-up" className="text-gray-900 ml-1">Create account</Link>
           </Typography>
         </form>
-
       </div>
-      <div className="w-2/5 h-full hidden lg:block">
+      <div className="w-2/5 m-2 hidden lg:block ">
         <img
           src="/img/pattern.png"
           className="h-full w-full object-cover rounded-3xl"
