@@ -7,8 +7,9 @@ import {
   ServerStackIcon,
   RectangleStackIcon,
   ChatBubbleLeftRightIcon,
+  ClipboardDocumentIcon,
 } from "@heroicons/react/24/solid";
-import { Home,Inbox,Chat, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home,Inbox,Chat, Profile, Tables, Document, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -48,6 +49,12 @@ export const routes = [
         name: "tables",
         path: "/tables",
         element: <Tables />,
+      },
+      {
+        icon: <ClipboardDocumentIcon {...icon} />,
+        name: "Document",
+        path: "/document",
+        element: <Document />,
       },
       {
         icon: <InformationCircleIcon {...icon} />,
