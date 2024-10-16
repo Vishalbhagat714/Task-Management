@@ -8,9 +8,11 @@ import {
   RectangleStackIcon,
   ChatBubbleLeftRightIcon,
   ClipboardDocumentIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import { Home,Inbox,Chat, Profile, Tables, Document, Notifications } from "@/pages/dashboard";
+import { Home,Inbox,Chat, Profile, Tables, Document, Notifications, Calender, Members } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
+import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -57,10 +59,22 @@ export const routes = [
         element: <Document />,
       },
       {
+        icon: <CalendarDaysIcon {...icon} />,
+        name: "Calender",
+        path: "/calender",
+        element: <Calender />,
+      },
+      {
         icon: <InformationCircleIcon {...icon} />,
         name: "notifications",
         path: "/notifications",
         element: <Notifications />,
+      },
+      {
+        icon: <UserGroupIcon {...icon} />,
+        name: "Members",
+        path: "/members",
+        element: <Members/>,
       },
     ],
   },
