@@ -72,6 +72,15 @@ export function DashboardNavbar() {
           </Typography>
         </div>
         <div className="flex items-center">
+          <div className="hidden lg:block mr-auto md:mr-4 ">
+              <Link
+               to=""
+            >
+              <Button variant="gradient" fullWidth>
+                + Add New Project
+              </Button>
+            </Link>
+          </div>
           <div className="mr-auto md:mr-4 md:w-56">
             <Input label="Search" />
           </div>

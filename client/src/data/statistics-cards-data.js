@@ -9,23 +9,23 @@ export const statisticsCardsData = [
   {
     color: "gray",
     icon: BanknotesIcon,
-    title: "Today's Money",
-    value: "$53k",
+    title: "Project Overview",
+    value: "Task Management",
     footer: {
       color: "text-green-500",
       value: "+55%",
-      label: "than last week",
+      label: "Completed than last week",
     },
   },
   {
     color: "gray",
     icon: UsersIcon,
-    title: "Today's Users",
-    value: "2,300",
+    title: "Team Overview",
+    value: "8 Members",
     footer: {
       color: "text-green-500",
-      value: "+3%",
-      label: "than last month",
+      value: "6",
+      label: "Online members",
     },
   },
   {

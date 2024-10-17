@@ -48,6 +48,7 @@ export function Home() {
           />
         ))}
       </div>
+      {/* Carts  */}
       <div className="mb-6 grid grid-cols-1 gap-y-12 gap-x-6 md:grid-cols-2 xl:grid-cols-3">
         {statisticsChartsData.map((props) => (
           <StatisticsChart
@@ -65,7 +66,9 @@ export function Home() {
           />
         ))}
       </div>
+      {/* Footer Cards  */}
       <div className="mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3">
+        {/* Projects  */}
         <Card className="overflow-hidden xl:col-span-2 border border-blue-gray-100 shadow-sm">
           <CardHeader
             floated={false}
@@ -193,6 +196,7 @@ export function Home() {
             </table>
           </CardBody>
         </Card>
+        {/* Todo Task  */}
         <Card className="border border-blue-gray-100 shadow-sm">
           <CardHeader
             floated={false}
